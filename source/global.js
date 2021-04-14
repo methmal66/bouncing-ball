@@ -1,5 +1,5 @@
 const CANVAS = { WIDTH: 790, HEIGHT: 580 };
-const INITIAL_LOCATION = { x: CANVAS.WIDTH / 2, y: CANVAS.HEIGHT / 2 };
+const INITIAL_COORDINATE = { x: CANVAS.WIDTH / 2, y: CANVAS.HEIGHT / 2 };
 const SPEED = { x: 5, y: 5 };
 const DIAMETER = 60;
 const BALL_COLOR = 100;
