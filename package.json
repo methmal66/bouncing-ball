@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "test p5.js as an electron app",
   "main": "main.js",
-  "author": "Sanuja Methmal",
+  "author": {
+    "name": "Sanuja Methmal",
+    "email": "methmal66@gmail.com"
+  },
   "license": "MIT",
   "scripts": {
     "start": "electron ."
@@ -11,5 +14,14 @@
   "devDependencies": {
     "electron": "^12.0.2",
     "electron-reloader": "^1.2.0"
+  },
+  "build": {
+    "appId": "com.sanujamethmal.electron.p5.bouncing-ball",
+    "linux": {
+      "target": [
+        "deb"
+      ],
+      "category": "Utility"
+    }
   }
 }
