@@ -5,10 +5,10 @@ const displayBallAt = (cords) => {
 const findBallDirection = (() => {
   let direction = { x: 1, y: 1 };
   return (cords) => {
-    if (cords.y > CANVAS.HEIGHT || cords.y < 0) {
+    if (cords.y > CANVAS.HEIGHT - RADIUS || cords.y < RADIUS) {
       direction.y *= -1;
     }
-    if (cords.x > CANVAS.WIDTH || cords.x < 0) {
+    if (cords.x > CANVAS.WIDTH - RADIUS || cords.x < RADIUS) {
       direction.x *= -1;
     }
     return direction;
